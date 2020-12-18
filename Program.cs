@@ -2,13 +2,14 @@
 
 namespace EmpresaEventos03
 {
-    class Program
+    class Program //user interface through the console application
     {
         public static string opc;
         static void Main(string[] args)
         {
             do
             {
+                // console app menu to input data
                 Console.Clear();
                 Console.WriteLine("Bem Vindo ao Eventos 1.0");
                 Console.WriteLine("=============================");
