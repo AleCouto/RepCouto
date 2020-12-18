@@ -1,6 +1,7 @@
 ﻿using System;
 namespace EmpresaEventos03
 {
+    // Class models
     public class Evento
     {
         public int id;
@@ -10,7 +11,7 @@ namespace EmpresaEventos03
         public decimal precoIngr;
         public string observ;
 
-
+        //methods for adding data 
         public void AdDadosEvent()
         {
             Console.Clear();
@@ -26,7 +27,8 @@ namespace EmpresaEventos03
             Console.Write("Observações: ");
             observ = Convert.ToString(Console.ReadLine());
         }
-
+        
+        //methods for displaying data
         public void ShowDadosEvent()
         {
             
@@ -39,7 +41,8 @@ namespace EmpresaEventos03
             Console.WriteLine("Observações: " + observ);
             Console.WriteLine("===============================");
         }
-
+     
+        //methods for updating data
         public void AtualizarEventDados(string novoNome, DateTime novoDataRea, string novoLocal, decimal novoPrecoIngr, string novoObserv)
         {
             nome = novoNome;
@@ -47,13 +50,6 @@ namespace EmpresaEventos03
             local = novoLocal;
             precoIngr = novoPrecoIngr;
             observ = novoObserv;
-
-        }
-       
-         
-       
+        }       
     }
- 
 }
-
-
