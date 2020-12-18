@@ -5,20 +5,21 @@ using System.Text;
 namespace EmpresaEventos03
 {
     public class ListaEventos
-    {
-
-        static private List<Evento> listaEv = new List<Evento>();
+    { 
+        static private List<Evento> listaEv = new List<Evento>();// creating lists
         static private int contador = 0;
-
+        
+        
+        // controlling methods to add
         public static void Adicionar()
-        {
-            
+        {    
             Evento novoEvento = new Evento();
             novoEvento.AdDadosEvent();
             novoEvento.id = ++contador;
             listaEv.Add(novoEvento);
         }
-
+        
+        // controlling methods to research by name
         public static void PesquisarNome()
         {
             Console.Clear();
@@ -34,7 +35,8 @@ namespace EmpresaEventos03
                 }
             }
         }
-
+        
+        // controlling methods to research by ID
         public static void PesquisarId()
         {
             Console.Clear();
@@ -48,9 +50,9 @@ namespace EmpresaEventos03
                     listaEv[i].ShowDadosEvent(); 
                 }
             }
-
         }
-
+        
+        // controlling methods to remove
         public static void Remover()
         {
             Console.Clear();
@@ -66,7 +68,8 @@ namespace EmpresaEventos03
                 }
             }
         }
-
+        
+        // controlling methods to list
         public static void Listar()
         {
             Console.Clear();
